@@ -9,6 +9,7 @@ class Router {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => HomeView());
+      //return MaterialPageRoute(builder: (_) => TabContainer());
       case 'login':
         return MaterialPageRoute(builder: (_) => LoginView());
       case 'post':

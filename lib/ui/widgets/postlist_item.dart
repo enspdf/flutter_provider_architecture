@@ -27,7 +27,8 @@ class PostListItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              post.title,
+              '${post.title} - ${post.likes.toString()}',
+              maxLines: 2,
               style: TextStyle(fontWeight: FontWeight.w900, fontSize: 16.0),
             ),
             Text(post.body, maxLines: 2, overflow: TextOverflow.ellipsis)
